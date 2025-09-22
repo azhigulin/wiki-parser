@@ -2,8 +2,9 @@
 
 A simple, reliable Python script that fetches top-1000 daily pageview statistics from the Wikimedia REST API for English Wikipedia and produces a visual report of the most popular articles over a date range.
 
-The project emphasizes simplicity and robustness: input validation, graceful handling of missing days or network issues, progress reporting, and a multi-facet visualization (one facet per top article).  
-At the same time, the visualization routine was carefully refined to produce aesthetic and clear plots, balancing simplicity with visual clarity — this improvement was motivated by a desire for an elegant, interpretable output, rather than unnecessary complexity.
+The project emphasizes **simplicity** and **robustness**: input validation, graceful handling of missing days or network issues, progress reporting, and a multi-facet visualization (one facet per top article).  
+At the same time, the visualization routine was carefully refined to produce **aesthetic** and **clear** plots, balancing simplicity with visual clarity — this improvement was motivated by a desire for an elegant, interpretable output, rather than unnecessary complexity.
+
 ---
 
 ## Features
