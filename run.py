@@ -40,7 +40,7 @@ def validate_dates(start_str, end_str):
 
 def fetch_daily_articles(date):
     """Fetch top articles for a specific date."""
-    url = f'{API_BASE_URL}/{PROJECT}/{ACCESS_MODE}/{date: %Y/%m/%d}'
+    url = f'{API_BASE_URL}/{PROJECT}/{ACCESS_MODE}/{date:%Y/%m/%d}'
     try:
         response = requests.get(url, headers={'User-Agent': 'wiki_parser'}, timeout=10)
 
@@ -98,7 +98,7 @@ def human_format(num):
     while abs(num) >= 1000 and magnitude < len(units)-1:
         magnitude += 1
         num /= 1000.0
-    return f'{num: .2f}{units[magnitude]}'
+    return f'{num:.2f}{units[magnitude]}'
 
 
 def create_visualization(df_top, metrics):
