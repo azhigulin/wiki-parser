@@ -2,7 +2,7 @@
 
 A simple, reliable Python script that fetches top-1000 daily pageview statistics from the Wikimedia REST API for English Wikipedia and produces a visual report of the most popular articles over a date range.
 
-The project emphasizes **simplicity and robustness**: input validation, graceful handling of missing days or network issues, progress reporting, and a multi-facet visualization (one facet per top article).  
+The project emphasizes **simplicity and robustness** : input validation, graceful handling of missing days or network issues, progress reporting, and a multi-facet visualization (one facet per top article).  
 At the same time, the visualization routine was carefully refined to produce **aesthetic and clear plots**, balancing simplicity with visual clarity — this improvement was motivated by a desire for an elegant, interpretable output, rather than unnecessary complexity.
 ---
 
@@ -126,12 +126,6 @@ It should work reliably for small to medium date ranges (up to 365 days) without
   * `ACCESS_MODE` (`all-access`, `desktop`, `mobile-web`, `mobile-app` are valid options)
   * `TOP_ARTICLES_COUNT` — how many top articles to plot (default: 20)
   * `MAX_DAYS_RANGE` — maximum allowed number of days in the request range (default: 365)
-
----
-
-## Contributing
-
-Small improvements, bug reports and suggestions are welcome. When contributing, please keep changes small and focused (improve validation, error handling, or plotting ergonomics). If adding features that increase the number of API requests, consider adding optional request throttling or caching to keep usage friendly to the Wikimedia API.
 
 ---
 
